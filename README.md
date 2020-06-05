@@ -49,7 +49,7 @@ sched = torch.optim.lr_scheduler.ReduceLROnPlateau(optim,factor=0.5,threshold=0.
 Также из-за ограничений memory CUDA в Google Colab, базовым размером батча для всех моделей был выбран 8. Это максимальный батч для Dataloader, который пропускал метод  forward моделей **Unet2**  и **DilatedUnet**. Для более простых моделей также был использован размер батча 12, чтобы оценить как этот показатель влияет на обучение модели.
 Лучшие показатели качества для комбинаций моделей и лоссов приведены в таблице:
 
-![Results](/home/ilya/Stepik DLCourse/Segmentation/pics/results.png)
+![Results](pics/results.png)
 
 Все графики обучения представлены в соответсвующих разделах *Final [hw]semantic_segmentation.ipynb*
 
